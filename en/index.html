@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gravure Culture — An Aesthetic & Cultural Essay</title>
+  <meta name="description" content="An encyclopedic, readable essay connecting gravure to Heian poetry, Edo bijin-ga, early Shōwa photography, and East Asian aesthetics." />
+  <link rel="canonical" href="https://gravure-culture.github.io/en/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E📖%3C/text%3E%3C/svg%3E">
+
+  <style>
+    :root{
+      --content-width:70ch;--radius:10px;--shadow:0 1px 12px rgba(0,0,0,.08);
+      --bg:#ffffff;--bg-soft:#f6f6f7;--text:#1a1a1a;--muted:#555;--border:#e6e6eb;
+      --brand:#2a5bd7;--accent:#e9eefc;--callout:#fffbea;--code-bg:#f5f5f8;
+      --serif:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      --sans:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      --mono:ui-monospace, Menlo, Consolas, Monaco, "Liberation Mono", "Courier New", monospace;--line:1.7;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0f1115;--bg-soft:#141820;--text:#f0f2f6;--muted:#a9b0bd;--border:#262b36;--brand:#8db3ff;--accent:#1b2334;--callout:#161d26;--code-bg:#0b0d11;}
+    }
+    html[data-theme="light"]{--bg:#fff;--bg-soft:#f6f6f7;--text:#1a1a1a;--muted:#555;--border:#e6e6eb;--brand:#2a5bd7;--accent:#e9eefc;--callout:#fffbea;--code-bg:#f5f5f8;}
+    html[data-theme="dark"]{--bg:#0f1115;--bg-soft:#141820;--text:#f0f2f6;--muted:#a9b0bd;--border:#262b36;--brand:#8db3ff;--accent:#1b2334;--callout:#161d26;--code-bg:#0b0d11;}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);line-height:var(--line);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    header.site{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(6px);}
+    .wrap{max-width:var(--content-width);margin:0 auto;padding:1.2rem 1.1rem;}
+    .masthead{display:flex;align-items:center;gap:1rem;justify-content:space-between;}
+    .brand{font-family:var(--sans);font-weight:700;letter-spacing:.2px;display:flex;align-items:center;gap:.6rem;}
+    .brand .emoji{font-size:1.2rem}
+    .lang-switch{font-family:var(--sans);font-size:.92rem;color:var(--muted);}
+    .lang-switch a{font-weight:600}
+    .theme-toggle{appearance:none;border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:.45rem .75rem;border-radius:999px;font-family:var(--sans);font-size:.92rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;box-shadow:var(--shadow);}
+    .theme-toggle:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+    nav.toc{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;margin:1rem auto 2rem;font-family:var(--sans);}
+    nav.toc h2{margin:0 0 .4rem;font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);}
+    nav.toc ol{margin:.4rem 0 0 1rem;padding:0} nav.toc li{margin:.25rem 0}
+    h1,h2,h3{line-height:1.3;margin:1.6rem 0 .6rem} 
+    h1{font-size:clamp(1.6rem,1.2rem + 2vw,2.2rem);font-weight:800;letter-spacing:.3px;}
+    h2{font-size:clamp(1.2rem,1rem + 1vw,1.6rem);} 
+    h3{font-size:clamp(1.05rem,.95rem + .6vw,1.2rem);}
+    .meta{font-family:var(--sans);color:var(--muted);margin-top:.2rem;}
+    .intro{background:var(--accent);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;margin:1rem 0 1.4rem;font-family:var(--sans);}
+    .section-divider{height:1px;background:var(--border);margin:1.6rem 0;}
+    footer.site{border-top:1px solid var(--border);background:var(--bg);font-family:var(--sans);color:var(--muted);}
+    footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+    code,pre{font-family:var(--mono);background:var(--code-bg);border:1px solid var(--border);border-radius:6px;} 
+    code{padding:.1rem .35rem} pre{padding:.8rem;overflow:auto}
+    @media print{header.site,nav.toc,.theme-toggle,footer.site{display:none !important} body{background:#fff;color:#000} .wrap{max-width:100%;padding:0} a{color:#000;text-decoration:underline}}
+    ul.link-list{padding-left:1.2rem}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap masthead" role="banner">
+      <div class="brand">
+        <span class="emoji" aria-hidden="true">📖</span>
+        <span>Gravure Culture</span>
+      </div>
+      <div class="lang-switch" aria-label="Language switch">
+        <a href="/">日本語版</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-pressed="false" title="Toggle theme">
+        <span id="themeIcon" aria-hidden="true">🌓</span><span id="themeText">System</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main id="main" role="main">
+      <article>
+        <header>
+          <h1 id="title">Gravure Culture — An Aesthetic & Cultural Essay</h1>
+          <p class="meta">
+            English / <a href="/">日本語</a> · Updated: <time datetime="2025-10-03">October 3, 2025</time>
+          </p>
+          <div class="intro" role="note">
+            <strong>Summary:</strong> This essay approaches gravure not as sexualized consumption but as an <em>aesthetic, cultural, and humane</em> practice. It situates gravure within Heian <em>waka</em> poetics (794–1185), Edo <em>bijin-ga</em> (1603–1868), early Shōwa photography (1926–1945), and broader East Asian thought, connecting <em>yūgen</em>, <em>wabi-sabi</em>, <em>rei</em>/<em>dō</em>, and modern <em>kawaii</em> to an everyday art of living.
+          </div>
+        </header>
+
+        <!-- TOC -->
+        <nav class="toc" aria-labelledby="toc-title">
+          <h2 id="toc-title">Contents</h2>
+          <ol id="tocList"></ol>
+        </nav>
+
+        <!-- === Full English article === -->
+        <h2 id="intersection">The Intersection of Gravure Culture and Japanese Aesthetics</h2>
+        <p>Gravure is often misunderstood. Outside Japan, it is sometimes reduced to “sexual” expression. Yet in Japan, gravure has taken root as a space for artistic and cultural self-expression. Many gravure idols embody Japanese aesthetic and spiritual values, expressing their presence with subtlety, sincerity, and refinement.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="heian">Heian-Era Waka Aesthetics (794–1185) and Gravure</h2>
+        <p>In Heian court culture, <em>waka</em> poetry was the refined means of expressing human emotions and the transience of nature. Rather than direct description, <em>waka</em> relied on symbolism and suggestion. Natural motifs such as cherry blossoms or the moon symbolized human feelings and existence itself.
+        This aesthetic of “symbolism” and “resonance” continues in modern gravure. The smile, the gaze, or the movement of fabric in gravure photography, though not explicit, leave an emotional afterglow with the viewer. Gravure, in this sense, may be read as a “visual waka,” a poetic expression of human presence.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="showa">Early Shōwa Photography (1926–1945) and the Genealogy of Gravure</h2>
+        <p>The cultural roots of gravure can be traced back to photographic art of the early Shōwa period. Photographers sought not simply to record reality but to capture “living art” through light, shadow, expression, and texture. Portraits of women in particular reflected the beauty of human existence, much as gravure does today.
+        Through magazines and newspapers, gravure photography in the prewar and postwar years presented images of women as cultural ideals, exploring new femininities and modern aesthetics. These practices laid the groundwork for today’s gravure culture.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="bijinga">Continuity with Ukiyo-e <em>Bijin-ga</em> (Edo Period, 1603–1868)</h2>
+        <p>Edo-period ukiyo-e, especially <em>bijin-ga</em> (pictures of beautiful women), shares cultural continuity with gravure in its portrayal of idealized femininity. <em>Bijin-ga</em> expressed seasonal moods, clothing patterns, and daily life, serving as a shared sense of beauty within society.
+        Similarly, gravure reflects the aesthetics of its own era through clothing, settings, and poses. Swimsuits, uniforms, and casual fashion serve as modern <em>bijin-ga</em>, presenting approachable ideals of beauty.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="yugen">Gravure and Traditional Aesthetics — <em>Yūgen</em> and <em>Wabi-Sabi</em></h2>
+        <p>Japanese art and literature have long embraced aesthetics such as <em>yūgen</em> (mystery and depth) and <em>wabi-sabi</em> (beauty in imperfection and simplicity). <em>Yūgen</em>, rooted in Heian poetry and later refined in Noh theatre (14th century), emphasizes depth and subtlety. The gestures, smiles, and interplay of light and shadow in gravure embody this aesthetic.
+        <em>Wabi-sabi</em>, shaped in medieval tea ceremony and haikai poetry (Kamakura–Muromachi, 1185–1573), values simplicity and modesty. Gravure’s appreciation of natural poses and understated clothing resonates with this tradition.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="china">Comparison with Chinese Aesthetics and Photographic Art</h2>
+        <p>From a broader East Asian perspective, gravure resonates with Chinese aesthetics. Classical Chinese painting (Tang to Ming dynasties, 7th–17th centuries) emphasized <em>qiyun shengdong</em> (spirit resonance and vitality), while <em>shinu hua</em> (paintings of refined ladies) depicted elegance and spirituality through women’s figures.
+        In modern China (early 20th century), female portrait photography became an expression of “national beauty” and modern identity. Gravure, seen in this light, participates in an Asian-wide tradition of celebrating the beauty of human existence.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="ethics">Ethics and Humanity — Humility and Self-Discipline</h2>
+        <p>Gravure idols, though radiant in public, often embody humility and self-discipline. A photoshoot is not mere display but a practice of harmony and self-regulation. This recalls the Japanese spirit of <em>rei</em> (etiquette) and <em>dō</em> (the way), comparable to the cultivation of body and mind in martial arts or tea ceremony.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="idol">Gravure and Japanese Culture — Part of Idol Culture</h2>
+        <p>Gravure is closely linked to idol culture. Idols are not just entertainers but companions who bring <em>kawaii</em> and comfort to everyday life. Gravure extends this role, presenting an “aesthetics of living together” through familiar fashion and lifestyle. Swimsuits, uniforms, and casual wear signify not provocation but empathy and relatability.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="fashion">Fashion and Aesthetics — The Cultural Meaning of <em>Kawaii</em></h2>
+        <p>Fashion in gravure is more than costume. Swimsuits symbolize harmony with nature, uniforms represent purity and youth, while casual wear and mini skirts extend Japan’s <em>kawaii</em> culture. This aesthetic of daily life recalls the traditional Japanese art that celebrated the seasons and the beauty of everyday existence, bridging art and life.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="philosophy">Connections to Eastern Philosophy</h2>
+        <p>Eastern philosophy provides another perspective. Daoist and Zen ideals of <em>wu wei</em> (naturalness), harmony, and the unity of body and mind resonate with the natural poise of gravure idols. Gravure’s charm lies not only in physical beauty but in its reflection of humanity and ways of living.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="conclusion">Conclusion — Gravure as Cultural and Artistic Expression</h2>
+        <p>Gravure is not mere entertainment or consumption but a cultural practice rooted in Japanese aesthetics. Drawing from Heian <em>waka</em> (794–1185), Edo <em>bijin-ga</em> (1603–1868), early Shōwa photography (1926–1945), and resonances with Chinese aesthetics, gravure traverses <em>yūgen</em>, <em>wabi-sabi</em>, <em>rei</em>, <em>dō</em>, and modern <em>kawaii</em> to reveal depth, warmth, and human presence.
+        In this sense, gravure is a bridge between Japan’s artistic traditions and contemporary culture — a site where people rediscover beauty, human connection, and the joy of living together.</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="links">Relevant links</h2>
+        <ul class="link-list">
+          <li><a href="https://kondo-asami-legacy.github.io/en/">Asami Kondo — A Light in People’s Hearts</a></li>
+          <li><a href="https://kondo-asami-legacy.github.io/en/asami-kondo-aesthetics/">The Philosophy and Aesthetics of Asami Kondo: Artistic Self-Expression in Contemporary Idol Culture</a></li>
+          <li><a href="/">Japanese version of this essay</a></li>
+        </ul>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site" role="contentinfo">
+    <div class="wrap">
+      <div>© <span id="year"></span> Gravure Culture.</div>
+      <div>Licensed under Creative Commons Attribution–ShareAlike 4.0 International (CC BY-SA 4.0). Please attribute or link to this page as the source.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const KEY='theme',root=document.documentElement,btn=document.getElementById('themeToggle'),icon=document.getElementById('themeIcon'),text=document.getElementById('themeText'),mq=window.matchMedia('(prefers-color-scheme: dark)');
+      function system(){return mq.matches?'dark':'light'}
+      function apply(mode){root.setAttribute('data-theme',mode);const eff=mode==='auto'?system():mode;btn.setAttribute('aria-pressed',mode!=='auto');icon.textContent=eff==='dark'?'🌙':'☀️';text.textContent=(mode==='auto')?'System':(eff==='dark'?'Dark':'Light')}
+      const saved=localStorage.getItem(KEY)||'auto';apply(saved);
+      mq.addEventListener('change',()=>{if((localStorage.getItem(KEY)||'auto')==='auto')apply('auto')});
+      btn.addEventListener('click',()=>{const cur=localStorage.getItem(KEY)||'auto';let next;if(cur==='auto'){next=system()==='dark'?'light':'dark'}else{next=(cur==='dark')?'light':'dark'}localStorage.setItem(KEY,next);apply(next)});
+      btn.addEventListener('auxclick',e=>{if(e.shiftKey||e.button===1){localStorage.setItem(KEY,'auto');apply('auto')}});
+      document.getElementById('year').textContent=new Date().getFullYear();
+      // TOC
+      const toc=document.getElementById('tocList');
+      Array.from(document.querySelectorAll('main article h2')).forEach(h=>{
+        const li=document.createElement('li');const a=document.createElement('a');
+        a.href=`#${h.id}`;a.textContent=h.textContent.replace(/\s*—.*/,'');li.appendChild(a);toc.appendChild(li);
+      });
+      document.documentElement.style.scrollBehavior='smooth';
+    })();
+  </script>
+</body>
+</html>
