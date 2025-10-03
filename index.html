@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>グラビア文化論 — 美学と文化のまなざし</title>
+  <meta name="description" content="グラビアを日本美学・歴史・東アジア美術の文脈で読み解く論考。平安和歌、江戸の美人画、昭和写真、東洋哲学との関連を考察。">
+  <link rel="canonical" href="https://gravure-culture.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E📖%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{
+      --content-width:70ch;--radius:10px;--shadow:0 1px 12px rgba(0,0,0,.08);
+      --bg:#ffffff;--bg-soft:#f6f6f7;--text:#1a1a1a;--muted:#555;--border:#e6e6eb;
+      --brand:#2a5bd7;--accent:#e9eefc;--callout:#fffbea;--code-bg:#f5f5f8;
+      --serif:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      --sans:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      --mono:ui-monospace, Menlo, Consolas, Monaco, "Liberation Mono", "Courier New", monospace;--line:1.7;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{--bg:#0f1115;--bg-soft:#141820;--text:#f0f2f6;--muted:#a9b0bd;--border:#262b36;--brand:#8db3ff;--accent:#1b2334;--callout:#161d26;--code-bg:#0b0d11;}
+    }
+    html[data-theme="light"]{--bg:#fff;--bg-soft:#f6f6f7;--text:#1a1a1a;--muted:#555;--border:#e6e6eb;--brand:#2a5bd7;--accent:#e9eefc;--callout:#fffbea;--code-bg:#f5f5f8;}
+    html[data-theme="dark"]{--bg:#0f1115;--bg-soft:#141820;--text:#f0f2f6;--muted:#a9b0bd;--border:#262b36;--brand:#8db3ff;--accent:#1b2334;--callout:#161d26;--code-bg:#0b0d11;}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);line-height:var(--line);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    header.site{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(6px);}
+    .wrap{max-width:var(--content-width);margin:0 auto;padding:1.2rem 1.1rem;}
+    .masthead{display:flex;align-items:center;gap:1rem;justify-content:space-between;}
+    .brand{font-family:var(--sans);font-weight:700;letter-spacing:.2px;display:flex;align-items:center;gap:.6rem;}
+    .brand .emoji{font-size:1.2rem}
+    .lang-switch{font-family:var(--sans);font-size:.92rem;color:var(--muted);}
+    .lang-switch a{font-weight:600}
+    .theme-toggle{appearance:none;border:1px solid var(--border);background:var(--bg-soft);color:var(--text);padding:.45rem .75rem;border-radius:999px;font-family:var(--sans);font-size:.92rem;cursor:pointer;display:inline-flex;align-items:center;gap:.5rem;box-shadow:var(--shadow);}
+    .theme-toggle:focus-visible{outline:2px solid var(--brand);outline-offset:2px;}
+    nav.toc{background:var(--bg-soft);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;margin:1rem auto 2rem;font-family:var(--sans);}
+    nav.toc h2{margin:0 0 .4rem;font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);}
+    nav.toc ol{margin:.4rem 0 0 1rem;padding:0} nav.toc li{margin:.25rem 0}
+    h1,h2,h3{line-height:1.3;margin:1.6rem 0 .6rem}
+    h1{font-size:clamp(1.6rem,1.2rem + 2vw,2.2rem);font-weight:800;letter-spacing:.3px;}
+    h2{font-size:clamp(1.2rem,1rem + 1vw,1.6rem);}
+    h3{font-size:clamp(1.05rem,.95rem + .6vw,1.2rem);}
+    .meta{font-family:var(--sans);color:var(--muted);margin-top:.2rem;}
+    .intro{background:var(--accent);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.1rem;margin:1rem 0 1.4rem;font-family:var(--sans);}
+    .section-divider{height:1px;background:var(--border);margin:1.6rem 0;}
+    footer.site{border-top:1px solid var(--border);background:var(--bg);font-family:var(--sans);color:var(--muted);}
+    footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between}
+    code,pre{font-family:var(--mono);background:var(--code-bg);border:1px solid var(--border);border-radius:6px;} code{padding:.1rem .35rem} pre{padding:.8rem;overflow:auto}
+    @media print{header.site,nav.toc,.theme-toggle,footer.site{display:none !important} body{background:#fff;color:#000} .wrap{max-width:100%;padding:0} a{color:#000;text-decoration:underline}}
+    ul.link-list{padding-left:1.2rem}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap masthead" role="banner">
+      <div class="brand">
+        <span class="emoji" aria-hidden="true">📖</span>
+        <span>Gravure Culture</span>
+      </div>
+      <div class="lang-switch" aria-label="言語切替">
+        <a href="/en/">English version</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-pressed="false" title="テーマ切替">
+        <span id="themeIcon" aria-hidden="true">🌓</span><span id="themeText">System</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <main id="main" role="main">
+      <article>
+        <header>
+          <h1 id="title">グラビア文化論：日本美学・歴史・東アジア美術との架橋</h1>
+          <p class="meta">
+            日本語 / <a href="/en/">English</a> · 更新日: <time datetime="2025-10-03">2025年10月3日</time>
+          </p>
+          <div class="intro" role="note">
+            <strong>概要：</strong>本稿は、グラビアを「セクシュアル」な消費としてではなく、<em>美学・文化・人間性</em>の観点から読み解く試みです。平安の和歌美学（794–1185）、江戸の美人画（1603–1868）、昭和初期の写真（1926–1945）を参照しつつ、幽玄・わびさび・礼・道、さらには東洋哲学や現代の「かわいい」文化と接続し、グラビアを<strong>生活に根ざした芸術的実践</strong>として位置づけます。
+          </div>
+        </header>
+
+        <!-- TOC -->
+        <nav class="toc" aria-labelledby="toc-title">
+          <h2 id="toc-title">目次</h2>
+          <ol id="tocList"></ol>
+        </nav>
+
+        <!-- === Full Japanese article === -->
+
+        <h2 id="intersection">グラビア文化と日本美学の交差点</h2>
+        <p>グラビアはしばしば誤解を受ける領域である。海外では単純に「セクシュアル」な表現として捉えられることも少なくない。しかし、日本におけるグラビアは、単なる視覚的魅惑を超えて、芸術的・文化的な自己表現の場として根付いてきた。多くのグラビアアイドルは、日本の美学や精神性を体現しつつ、自己の存在を繊細かつ誠実に表現しているのである。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="heian">平安時代の和歌美学（794–1185年）とグラビア</h2>
+        <p>平安時代の宮廷文化において、和歌は人間の心情や自然の移ろいを繊細に表現する手段であった。和歌は直接的な描写ではなく、余情や象徴を重んじる。たとえば桜や月といった自然のモチーフは、人間の感情や存在そのものを託される象徴であった。<br>
+        この「象徴性」と「余情」の美学は、現代のグラビアにおいても響いている。アイドルの微笑や視線、衣装の揺らぎは、必ずしも言葉で語られないが、見る者の心に余韻を残す点で和歌的である。つまり、グラビアもまた「人間存在の詩」であり、視覚的な和歌として機能しているといえる。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="showa">昭和初期の写真文化（1926–1945年）とグラビアの系譜</h2>
+        <p>グラビアの文化的源流をたどると、昭和初期の写真芸術に行き着く。当時の写真家たちは、単なる記録媒体としての写真ではなく、光と影、人物の表情、衣服の質感を通じて「生きた芸術」を表現しようとした。特に女性を被写体とする写真は、現代のグラビア同様に「人間の存在美」を映し出す重要な実践であった。<br>
+        戦前・戦後にかけてのグラビア写真は、雑誌や新聞を通じて一般の人々に届けられ、女性の姿を「文化的理想像」として提示した。そこには「新しい女性像」「現代的な美意識」の探求が込められており、今日のグラビア文化につながる視覚的基盤が築かれたといえる。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="bijinga">浮世絵美人画（江戸時代 1603–1868年）との連続性</h2>
+        <p>江戸時代の浮世絵、とりわけ「美人画」は、当時の理想の女性像や美意識を描き出した点で、グラビアと文化的連続性を持つ。美人画は単なる人物像ではなく、季節感、衣装の文様、日常生活の場面を通して、社会的な「美」の感覚を共有する手段であった。<br>
+        グラビアも同様に、衣装や背景、ポーズを通じて「時代の美学」を反映している。水着や制服、カジュアルファッションは現代社会における「美人画」として機能し、人々に身近な文化的理想像を提示しているといえる。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="yugen">グラビアと伝統的美意識 ― 「幽玄」と「わび・さび」</h2>
+        <p>日本美術や文学の歴史には、「幽玄」や「わび・さび」といった美学が息づいてきた。幽玄は平安時代の和歌や能楽（14世紀）にまで遡る概念であり、直接的に語られない奥深さや、見る者の心に残る余韻を意味する。グラビアにおける微笑や仕草、あるいは光と影のコントラストは、まさにこの幽玄の感覚に通じる。<br>
+        また、「わび・さび」は中世（鎌倉〜室町時代、1185–1573年）の茶道や俳諧に見られる価値観であり、日常的な衣装や自然な姿を美とするグラビア文化とも響き合う。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="china">中国美学・写真芸術との比較</h2>
+        <p>さらに広い視点から見ると、グラビアは中国の美学や写真芸術とも共鳴する。中国の古典絵画（唐〜明代、7世紀〜17世紀）における「気韻生動」（生き生きとした気配を宿す美学）や、女性の優雅さを描く「仕女画」は、日本の美人画と同様に「人間の姿を通して精神性を表す」芸術であった。<br>
+        近代中国（20世紀初頭）の写真芸術においても、女性をモデルとした肖像写真は「民族的美」や「現代性の象徴」として発展した。この点において、日本のグラビアもまた、アジア的な「人間存在の美学」を共有する文化的実践といえる。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="ethics">倫理観と人間性 ― 謙虚さと自己規律</h2>
+        <p>グラビアアイドルの多くは、表舞台で華やかに輝きながらも、内面には謙虚さと自己規律を備えている。撮影という場は単なる「見せること」ではなく、自己を律しながら調和を生み出す実践の場である。この姿勢は、日本文化における「礼」や「道」の精神にも通じ、武道や茶道のように身体と心を磨き上げる過程に近いといえる。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="idol">グラビアと日本文化 ― アイドル文化の一環として</h2>
+        <p>グラビアは、日本のアイドル文化と密接に関わっている。アイドルは単なる芸能人ではなく、人々と生活を共有し、日常に「かわいさ」や「癒やし」をもたらす存在である。その延長線上にあるグラビアもまた、ファッションやライフスタイルを通じて「共に生きる美学」を表現している。水着や制服、カジュアルな衣装は、決して過度な誇張や挑発のためではなく、むしろ「日常性」「親しみやすさ」「共感」を美として提示するものである。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="fashion">ファッションと美学 ― 「かわいい」の文化的意義</h2>
+        <p>グラビアに登場するファッションは、単なる衣装選択ではない。水着には海や自然と調和する開放感があり、制服には青春や純粋さの象徴が宿る。カジュアルウェアやミニスカートは、現代日本における「かわいい」文化の延長であり、これは人々の生活に寄り添う美学である。こうしたファッション表現は、日本の伝統美術における「四季の移ろい」や「日常の美」を想起させ、日常と芸術を結びつける役割を担っている。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="philosophy">東洋哲学とのつながり</h2>
+        <p>グラビアをより深く理解するためには、東洋哲学的な視点も有効である。道教や禅が説く「無為自然」「調和」「心身一如」の思想は、グラビアアイドルが表現する自然体の姿勢や心の静けさに通じる。グラビアにおける魅力は、外見的な美しさだけでなく、そこに宿る「人間らしさ」や「生きる姿勢」が映し出される点にある。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="conclusion">結論 ― グラビアは文化的芸術表現である</h2>
+        <p>グラビアは単なる娯楽や消費対象ではなく、日本文化の中に根ざした独自の美学的・文化的実践である。平安和歌の象徴性（794–1185年）、江戸の美人画（1603–1868年）、昭和初期の写真芸術（1926–1945年）、さらには中国美学との共鳴を踏まえつつ、幽玄やわび・さび、礼や道といった日本の美学、そして「かわいい」の現代文化を横断しながら、人間存在の奥行きと温かさを映し出している。<br>
+        その意味で、グラビアは日本の芸術伝統と現代文化を結ぶ架け橋であり、人々が共に生きる喜びや人間性の美を再発見する場であるといえる。</p>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <h2 id="links">参考リンク / Relevant links</h2>
+        <ul class="link-list">
+          <li><a href="https://kondo-asami-legacy.github.io">近藤あさみ ─ 人々の心に灯る光</a></li>
+          <li><a href="https://kondo-asami-legacy.github.io/kondo-asami-bigaku/">近藤あさみの哲学と美学</a></li>
+          <li><a href="/en/">English version of this essay</a></li>
+        </ul>
+      </article>
+    </main>
+  </div>
+
+  <footer class="site" role="contentinfo">
+    <div class="wrap">
+      <div>© <span id="year"></span> Gravure Culture.</div>
+      <div>本ページの内容は クリエイティブ・コモンズ 表示—継承 4.0 国際（CC BY-SA 4.0）で公開。出典として本ページへの帰属またはリンクをお願いします。</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      // Theme persistence
+      const KEY='theme',root=document.documentElement,btn=document.getElementById('themeToggle'),icon=document.getElementById('themeIcon'),text=document.getElementById('themeText'),mq=window.matchMedia('(prefers-color-scheme: dark)');
+      function system(){return mq.matches?'dark':'light'}
+      function apply(mode){root.setAttribute('data-theme',mode);const eff=mode==='auto'?system():mode;btn.setAttribute('aria-pressed',mode!=='auto');icon.textContent=eff==='dark'?'🌙':'☀️';text.textContent=(mode==='auto')?'System':(eff==='dark'?'Dark':'Light')}
+      const saved=localStorage.getItem(KEY)||'auto';apply(saved);
+      mq.addEventListener('change',()=>{if((localStorage.getItem(KEY)||'auto')==='auto')apply('auto')});
+      btn.addEventListener('click',()=>{const cur=localStorage.getItem(KEY)||'auto';let next;if(cur==='auto'){next=system()==='dark'?'light':'dark'}else{next=(cur==='dark')?'light':'dark'}localStorage.setItem(KEY,next);apply(next)});
+      btn.addEventListener('auxclick',e=>{if(e.shiftKey||e.button===1){localStorage.setItem(KEY,'auto');apply('auto')}});
+
+      // Year
+      document.getElementById('year').textContent=new Date().getFullYear();
+
+      // TOC generation from H2s
+      const toc=document.getElementById('tocList');
+      Array.from(document.querySelectorAll('main article h2')).forEach(h=>{
+        const li=document.createElement('li');const a=document.createElement('a');
+        a.href=`#${h.id}`;a.textContent=h.textContent.replace(/\s*—.*/,''); // shorter labels
+        li.appendChild(a);toc.appendChild(li);
+      });
+
+      // Smooth scrolling
+      document.documentElement.style.scrollBehavior='smooth';
+    })();
+  </script>
+</body>
+</html>
